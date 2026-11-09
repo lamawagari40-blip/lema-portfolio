@@ -1,269 +1,128 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lema Wagari - AI, Machine Learning and Computer Engineering Portfolio">
-    <title>Lema Wagari | Professional Portfolio</title>
+    <title>Lema Wagari | AI & ML Engineer</title>
+    <meta name="description" content="Professional Portfolio of Lema Wagari - AI & Machine Learning Engineer, Computer Engineer.">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVIGATION -->
-<nav class="navbar">
-    <a href="#home" class="logo">Lema<span>.dev</span></a>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">Lema.dev</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#updates">Updates</a></li>
+            <li><a href="#connect">Connect</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#experiences">Experiences</a></li>
-        <li><a href="#updates">Updates</a></li>
-        <li><a href="#connect">Connect</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <!-- HERO SECTION (Home) -->
+    <header id="home" class="hero">
+        <img src="profile.jpg" alt="Lema Wagari" class="profile-pic">
+        <p class="welcome-text">WELCOME TO MY PROFESSIONAL PORTFOLIO</p>
+        <h1>Hi, I'm <span class="highlight">Lema Wagari.</span></h1>
+        <p class="tagline">AI & Machine Learning Engineer | Computer Engineer</p>
+        <p class="sub-tagline">Student at Jimma University ECE | AI & ML Intern at EAII</p>
+    </header>
 
-<!-- HOME -->
-<header id="home" class="hero">
-    <div class="hero-content">
-        <p class="welcome">WELCOME TO MY PROFESSIONAL PORTFOLIO</p>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I am a Computer Engineering student at Jimma University. I build AI systems from scratch, focusing on Natural Language Processing (NLP), Neural Machine Translation (NMT), and MLOps. I am passionate about solving real-world problems using deep learning and data engineering.</p>
+    </section>
 
-        <img src="me.jpg" alt="Lema Wagari" class="profile-pic">
-
-        <h1>Welcome, I'm <span class="highlight">Lema Wagari.</span></h1>
-
-        <h2>AI & Machine Learning Developer</h2>
-
-        <p class="tagline">
-            Computer Engineering Student | AI Intern at EAII
-        </p>
-
-        <p class="hero-description">
-            Exploring Artificial Intelligence, Machine Learning,
-            Natural Language Processing and Software Engineering
-            to develop innovative technology solutions.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#projects" class="btn primary-btn">View My Projects</a>
-            <a href="#contact" class="btn secondary-btn">Contact Me</a>
-        </div>
-    </div>
-</header>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-    <h2>About Me</h2>
-
-    <div class="about-content">
-        <p>
-            I am Lema Wagari, an Electrical and Computer Engineering
-            student (Computer Stream) at Jimma University.
-        </p>
-
-        <p>
-            My professional interests include Artificial Intelligence,
-            Machine Learning, Data Engineering, Networking,
-            Natural Language Processing and Software Development.
-        </p>
-
-        <p>
-            I am gaining practical industry experience as an AI Intern
-            at the Ethiopian Artificial Intelligence Institute (EAII).
-        </p>
-
-        <p>
-            My ambition is to build innovative technology solutions
-            that address real-world problems.
-        </p>
-    </div>
-</section>
-
-<!-- COMPLETED PROJECTS ONLY -->
-<section id="projects" class="section">
-    <h2>Completed Projects</h2>
-
-    <div class="projects-grid">
-
-        <article class="project-card">
-            <h3>AI Trilingual Translation System</h3>
-
-            <p>
-                A machine translation system connecting
-                Afaan Oromoo, Amharic and English.
-            </p>
-
-            <p class="project-tech">
-                PyTorch | Bi-LSTM | Bahdanau Attention | NLP
-            </p>
-
-            <span class="project-status">Completed</span>
-
+    <!-- PROJECTS SECTION (Only Completed) -->
+    <section id="projects" class="section">
+        <h2>Completed Projects</h2>
+        <div class="project-card">
+            <h3>Saiko-Trilingual-LSTM</h3>
+            <p>A custom PyTorch Neural Machine Translation system for Afaan Oromoo ↔ Amharic ↔ English, built entirely from scratch.</p>
+            <ul class="project-details">
+                <li><strong>Architecture:</strong> 81.5M parameters, 2-Layer Bi-LSTM, Bahdanau Attention.</li>
+                <li><strong>Data:</strong> 1.7M trilingual pairs engineered via English Pivot Strategy.</li>
+                <li><strong>MLOps:</strong> Model and dataset hosted on Hugging Face.</li>
+            </ul>
             <div class="project-links">
-                <a href="https://github.com/lamawagari40-blip/oromo-translator"
-                   target="_blank" rel="noopener noreferrer"
-                   class="btn primary-btn">
-                    View Source Code
-                </a>
-
-                <a href="https://saikoai.streamlit.app/"
-                   target="_blank" rel="noopener noreferrer"
-                   class="btn secondary-btn">
-                    Live Demo
-                </a>
+                <a href="https://saikoai.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn">View Live App</a>
+                <a href="https://github.com/lamawagari40-blip/oromo-translator" target="_blank" rel="noopener noreferrer" class="btn">GitHub Code</a>
+                <a href="https://huggingface.co/lwagari/saiko-lstm-model" target="_blank" rel="noopener noreferrer" class="btn">Hugging Face Model</a>
             </div>
-        </article>
-
-    </div>
-</section>
-
-<!-- CERTIFICATES -->
-<section id="certificates" class="section">
-    <h2>Certificates & Training</h2>
-
-    <div class="certification-list">
-
-        <div class="cert-card">
-            <h3>Cisco CCNAv7</h3>
-            <p>Cisco Networking Academy / Jimma University</p>
         </div>
+    </section>
 
-        <div class="cert-card">
-            <h3>Introduction to Cybersecurity</h3>
-            <p>Cisco Networking Academy</p>
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates" class="section">
+        <h2>Certificates</h2>
+        <ul>
+            <li><strong>Cisco CCNAv7</strong> - Jimma University (210 Hours)</li>
+            <li><strong>Cisco:</strong> Introduction to Cybersecurity & Networking Basics</li>
+            <li><strong>Udacity:</strong> AI Fundamentals & Data Science Fundamentals</li>
+        </ul>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section">
+        <h2>Services</h2>
+        <ul>
+            <li><strong>Machine Learning Engineering:</strong> Building custom ML models from scratch (PyTorch, TensorFlow).</li>
+            <li><strong>Data Engineering:</strong> Dataset synthesis, cleaning pipelines, and preprocessing (1M+ data points).</li>
+            <li><strong>MLOps & Deployment:</strong> Hosting models on Hugging Face, building Streamlit web apps.</li>
+            <li><strong>NLP & Translation:</strong> Seq2Seq models, attention mechanisms, and low-resource language tech.</li>
+        </ul>
+    </section>
+
+    <!-- EXPERIENCES SECTION -->
+    <section id="experiences" class="section">
+        <h2>Experiences</h2>
+        <ul>
+            <li><strong>AI & ML Intern</strong> at EAII (Current)</li>
+            <li><strong>Computer Engineering Student</strong> at Jimma University (ECE)</li>
+        </ul>
+    </section>
+
+    <!-- UPDATES SECTION -->
+    <section id="updates" class="section">
+        <h2>Updates</h2>
+        <p><strong>Latest:</strong> Successfully deployed the Saiko-Trilingual-LSTM model to Hugging Face and Streamlit!</p>
+        <!-- You can add more updates here as you progress -->
+    </section>
+
+    <!-- CONNECT SECTION (Social Links) -->
+    <section id="connect" class="section">
+        <h2>Connect With Me</h2>
+        <p>Let's build something great. Reach out on any of these platforms:</p>
+        <div class="social-links">
+            <a href="https://github.com/lamawagari40-blip" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+            <a href="https://www.linkedin.com/in/lemma-wagari-8566543b2" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
+            <a href="https://huggingface.co/lwagari" target="_blank" rel="noopener noreferrer" class="btn">Hugging Face</a>
+            <a href="https://t.me/L_WMBR" target="_blank" rel="noopener noreferrer" class="btn">Telegram (@L_WMBR)</a>
+            <a href="https://t.me/Grace_0F_GOD" target="_blank" rel="noopener noreferrer" class="btn">Telegram (@Grace_0F_GOD)</a>
+            <a href="https://wa.me/251984706756" target="_blank" rel="noopener noreferrer" class="btn">WhatsApp</a>
         </div>
+    </section>
 
-        <div class="cert-card">
-            <h3>Networking Basics</h3>
-            <p>Cisco Networking Academy</p>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Ready to start your next project or just want to connect?</p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:lamawagari40@gmail.com">lamawagari40@gmail.com</a></p>
+            <p><strong>Location:</strong> Jimma, Ethiopia</p>
         </div>
+    </section>
 
-        <div class="cert-card">
-            <h3>Video Editing</h3>
-            <p>Abdii Sabaa University</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section">
-    <h2>My Services & Technical Areas</h2>
-
-    <div class="skills-grid">
-
-        <div class="skill-card">
-            <h3>AI & Machine Learning</h3>
-            <p>Machine learning projects and intelligent systems.</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Natural Language Processing</h3>
-            <p>Language technology and machine translation.</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Web Development</h3>
-            <p>Responsive websites using HTML, CSS and JavaScript.</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Python Programming</h3>
-            <p>Python-based programming and automation projects.</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Networking</h3>
-            <p>Networking fundamentals and IT infrastructure.</p>
-        </div>
-
-        <div class="skill-card">
-            <h3>Technical Collaboration</h3>
-            <p>Technology research, learning and project collaboration.</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- EXPERIENCES -->
-<section id="experiences" class="section">
-    <h2>Professional Experiences</h2>
-
-    <div class="project-card experience-card">
-        <h3>AI Intern</h3>
-        <p><strong>Ethiopian Artificial Intelligence Institute (EAII)</strong></p>
-        <p>Addis Ababa, Ethiopia</p>
-        <p>
-            Gaining practical exposure to Artificial Intelligence
-            and developing professional technical skills through
-            industry internship experience.
-        </p>
-    </div>
-</section>
-
-<!-- UPDATES -->
-<section id="updates" class="section">
-    <h2>Latest Updates</h2>
-
-    <div class="project-card">
-        <h3>AI Translation System Completed</h3>
-        <p>
-            Completed development of a multilingual translation
-            project connecting Afaan Oromoo, Amharic and English.
-        </p>
-    </div>
-
-    <div class="project-card">
-        <h3>Professional Development</h3>
-        <p>
-            Continuing to develop practical skills in AI,
-            Machine Learning and Software Engineering.
-        </p>
-    </div>
-</section>
-
-<!-- CONNECT -->
-<section id="connect" class="section">
-    <h2>Connect With Me</h2>
-    <p>Follow my professional journey and explore my work.</p>
-
-    <div class="social-links">
-        <a href="https://github.com/lamawagari40-blip" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/lemma-wagari-8566543b2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://huggingface.co/lwagari" target="_blank" rel="noopener noreferrer">Hugging Face</a>
-        <a href="https://t.me/L_WMBR" target="_blank" rel="noopener noreferrer">Telegram - L_WMBR</a>
-        <a href="https://t.me/Grace_0F_GOD" target="_blank" rel="noopener noreferrer">Telegram - Grace_0F_GOD</a>
-        <a href="https://wa.me/251984706756" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-    </div>
-</section>
-<!-- CONTACT -->
-<section id="contact" class="section">
-    <h2>Let's Work Together</h2>
-
-    <p>
-        Interested in technology, AI projects, collaboration
-        or professional opportunities? Let's connect.
-    </p>
-
-    <div class="social-links">
-        <a href="mailto:lamawagari40@gmail.com">Send Me an Email</a>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <h2>Let's Build the Future Together.</h2>
-
-    <p>© 2026 Lema Wagari. All Rights Reserved.</p>
-
-    <a href="#home">Back to Top ↑</a>
-</footer>
-
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Lema Wagari. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
