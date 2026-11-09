@@ -1,53 +1,285 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lema Wagari | AI & ML Engineer</title>
+
+    <meta name="description" content="Lema Wagari - AI, Machine Learning and Computer Engineering Portfolio">
+
+    <title>Lema Wagari | AI & Software Engineer</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Lema Wagari</h1>
-        <p>AI & Machine Learning Engineer | Computer Engineer</p>
-        <p>Student at Jimma University ECE | AI & ML Intern at EAII</p>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="#home" class="logo">Lema<span>.dev</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <img
+                src="me.jpg"
+                alt="Lema Wagari"
+                class="profile-pic"
+            >
+
+            <h1>
+                Welcome, I'm
+                <span class="highlight">Lema Wagari.</span>
+            </h1>
+
+            <h2>AI & Machine Learning Developer</h2>
+
+            <p class="tagline">
+                Computer Engineering Student | AI Intern at EAII
+            </p>
+
+            <p class="hero-description">
+                I build intelligent solutions using Artificial
+                Intelligence, Machine Learning, Natural Language
+                Processing, and Software Engineering.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">
+                    Explore My Projects
+                </a>
+
+                <a href="#contact" class="btn secondary-btn">
+                    Contact Me
+                </a>
+            </div>
+
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Computer Engineering student at Jimma University. I build AI systems from scratch, focusing on Natural Language Processing (NLP), Neural Machine Translation (NMT), and MLOps.</p>
-    </section>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
 
-    <section id="projects">
-        <h2>Featured Project</h2>
-        <div class="project-card">
-            <h3>Saiko-Trilingual-LSTM</h3>
-            <p>A custom Neural Machine Translation system for Afaan Oromoo ↔ Amharic ↔ English.</p>
-            <p><strong>Data:</strong> 1.7M trilingual pairs.</p>
-            <p><strong>Model:</strong> PyTorch (Bi-LSTM + Bahdanau Attention).</p>
-            <a href="https://saikoai.streamlit.app/" target="_blank">View Live App</a>
-            <a href="https://github.com/lamawagari40-blip/oromo-translator" target="_blank">View Code</a>
+        <h2>About Me</h2>
+
+        <div class="about-content">
+
+            <p>
+                I am Lema Wagari, an Electrical and Computer
+                Engineering student (Computer Stream) at Jimma
+                University.
+            </p>
+
+            <p>
+                I have a strong interest in Artificial Intelligence,
+                Machine Learning, Data Engineering, Networking,
+                and Software Development.
+            </p>
+
+            <p>
+                I am gaining practical industry experience as an
+                AI Intern at the Ethiopian Artificial Intelligence
+                Institute (EAII).
+            </p>
+
+            <p>
+                My goal is to develop innovative technologies
+                that solve real-world problems, especially in
+                language technology and intelligent systems.
+            </p>
+
         </div>
     </section>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li><strong>Cisco CCNAv7</strong> - Jimma University (210 Hours)</li>
-            <li><strong>Cisco:</strong> Introduction to Cybersecurity & Networking Basics</li>
-            <li><strong>Udacity:</strong> AI Fundamentals & Data Science Fundamentals</li>
-        </ul>
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>Artificial Intelligence</h3>
+                <p>Machine Learning, NLP, Deep Learning</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <p>Python, HTML, CSS, JavaScript</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>AI Frameworks</h3>
+                <p>PyTorch, Neural Networks, LSTM</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Networking</h3>
+                <p>CCNA, Routing, Switching, Cybersecurity</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Databases</h3>
+                <p>Database Fundamentals, SQL</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <p>Git, GitHub, Google Colab, VS Code</p>
+            </div>
+
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: lamawagari40@gmail.com</p>
-        <p><a href="https://www.linkedin.com/in/lemma-wagari-8566543b2" target="_blank">LinkedIn</a></p>
-        <p><a href="https://huggingface.co/lwagari" target="_blank">Hugging Face</a></p>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+
+        <h2>Featured Projects</h2>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+
+                <h3>AI Translation System</h3>
+
+                <p>
+                    A multilingual machine translation project
+                    connecting Afaan Oromoo, Amharic, and English.
+                </p>
+
+                <p class="project-tech">
+                    PyTorch | Bi-LSTM | Bahdanau Attention | NLP
+                </p>
+
+                <span class="project-status">Completed project</span>
+
+            </article>
+
+            <article class="project-card">
+
+                <h3>AI Autonomous Drone</h3>
+
+                <p>
+                    An intelligent drone development project
+                    exploring autonomous navigation and AI.
+                </p>
+
+                <p class="project-tech">
+                    Arduino | AI | Embedded Systems
+                </p>
+
+                <span class="project-status">In development</span>
+
+            </article>
+
+            <article class="project-card">
+
+                <h3>Smart Energy Monitoring</h3>
+
+                <p>
+                    An AI-based web application concept for
+                    energy monitoring, anomaly detection,
+                    and energy loss analysis.
+                </p>
+
+                <p class="project-tech">
+                    IoT | Machine Learning | Web Development
+                </p>
+
+                <span class="project-status">In development</span>
+
+            </article>
+
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Lema Wagari. Built with HTML, CSS, and JavaScript.</p>
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="section">
+
+        <h2>Certifications & Training</h2>
+
+        <div class="certification-list">
+
+            <div class="cert-card">
+                <h3>Cisco CCNAv7</h3>
+                <p>Cisco Networking Academy / Jimma University</p>
+            </div>
+
+            <div class="cert-card">
+                <h3>Introduction to Cybersecurity</h3>
+                <p>Cisco Networking Academy</p>
+            </div>
+
+            <div class="cert-card">
+                <h3>Networking Basics</h3>
+                <p>Cisco Networking Academy</p>
+            </div>
+
+            <div class="cert-card">
+                <h3>Video Editing</h3>
+                <p>Abdii Sabaa University</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+
+        <h2>Let's Work Together</h2>
+
+        <p>
+            Interested in AI, software development,
+            collaboration, or technology projects?
+            Let's connect and build something meaningful.
+        </p>
+
+        <div class="social-links">
+
+            <a href="https://github.com/lamawagari40-blip"
+               target="_blank" rel="noopener noreferrer">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/lemma-wagari-8566543b2"
+               target="_blank" rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <a href="https://huggingface.co/lwagari"
+               target="_blank" rel="noopener noreferrer">
+                Hugging Face
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <h2>Let's Build the Future Together.</h2>
+
+        <p>
+            © 2026 Lema Wagari. All Rights Reserved.
+        </p>
+
+        <a href="#home">Back to Top ↑</a>
+
     </footer>
+
 </body>
 </html>
