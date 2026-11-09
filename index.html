@@ -8,20 +8,29 @@
 </head>
 <body>
 
-    <!-- NAVIGATION -->
+       <!-- NAVIGATION -->
     <nav class="navbar">
-        <div class="logo">Lema.dev</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#experiences">Experiences</a></li>
-            <li><a href="#updates">Updates</a></li>
-            <li><a href="#connect">Connect</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="logo">Lema.dev</div>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Menu Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
+                <li><a href="#updates" onclick="toggleMenu()">Updates</a></li>
+                <li><a href="#connect" onclick="toggleMenu()">Connect</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- HERO SECTION -->
